@@ -46,13 +46,18 @@ You can change the hyperparameters by modifying `main.py`.
 bash demo.sh
 ```
 
-## Data
+## Datasets
 
-Preprocessed data are included in the `data` directory.
-Functions for loading the data are based on the implementation of a [graph
-convolutional network (GCN)](https://github.com/tkipf/gcn).
-You can use your own data if it is a graph, each node contains a feature vector,
-and at least a few labels have been observed. 
+Preprocessed data are downloaded from [here](https://github.com/kimiyoung/planetoid) and included in the `data` directory.
+Functions for loading the data are based on the implementation of a [graph convolutional network (GCN)](https://github.com/tkipf/gcn).
+You can use your own data if it is a graph, each node contains a feature vector, and at least a few labels have been observed. 
+
+| Name | Nodes | Edges | Attributes | Labels | Download |
+| :---: | ----: | ----: | ---------: | -----: | :---: |
+| Pubmed | 19,717 | 44,324 | 500 | 3 | [Link](https://github.com/kimiyoung/planetoid) |
+| Cora | 2,708 | 5,278 | 1,433 | 7 | [Link](https://github.com/kimiyoung/planetoid) |
+| Citeseer | 3,327 | 4,552 | 3,703 | 6 | [Link](https://github.com/kimiyoung/planetoid) |
+| Amazon | 32,966 | 63,285 | 3,000 | 3 | - |
 
 ## Reference
 
