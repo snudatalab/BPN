@@ -30,9 +30,7 @@ average margin of 2.4% points in accuracy.
 
 ## Prerequisites
 
-The following Python packages are required.
-All codes are written by Python 3.5.
-
+- Python 3.5+
 - [PyTorch](https://pytorch.org/)
 - [NumPy](https://numpy.org/)
 - [Scipy](https://scipy.org)
