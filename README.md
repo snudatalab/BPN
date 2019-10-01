@@ -1,9 +1,7 @@
 # Belief Propagation Networks
 
-This is a PyTorch implementation of Belief Propagation Networks.
-Refer to the following paper for detailed information.
-- Jaemin Yoo, Hyunsik Jeon and U Kang, Belief Propagation Network for Hard 
-Inductive Semi-Supervised Learning (IJCAI 2019)
+This project is a PyTorch implementation of [Belief Propagation Network for Hard Inductive Semi-Supervised Learning](https://www.ijcai.org/proceedings/2019/0580.pdf), published as a conference proceeding at [IJCAI 2019](http://ijcai19.org/).
+This paper proposes a novel approach for hard inductive learning on graph-structured data, where the graph is not given at the test time and thus previous approaches fail with low accuracy.
 
 ## License
 
@@ -30,17 +28,17 @@ feature and neighborhood without distinction.
 As a result, BPN outperforms state-of-the-art methods in four datasets with an
 average margin of 2.4% points in accuracy.
 
-## Requirements
+## Prerequisites
 
 The following Python packages are required.
 All codes are written by Python 3.5.
 
-- torch
-- numpy
-- scipy
-- click
+- [PyTorch](https://pytorch.org/)
+- [NumPy](https://numpy.org/)
+- [Scipy](https://scipy.org)
+- [Click](https://click.palletsprojects.com/en/7.x/)
 
-## Demo
+## Usage
 
 You can run a demo script `demo.sh` that reproduces the experimental results in
 the paper by the following command.
@@ -58,14 +56,12 @@ convolutional network (GCN)](https://github.com/tkipf/gcn).
 You can use your own data if it is a graph, each node contains a feature vector,
 and at least a few labels have been observed. 
 
-## Citation
+## Reference
 
 Please cite our paper if you use this code in your own work:
 ```
 @inproceedings{YooJK19,
-  author    = {Jaemin Yoo and
-               Hyunsik Jeon and
-               U Kang},
+  author    = {Jaemin Yoo and Hyunsik Jeon and U Kang},
   title     = {Belief Propagation Network for Hard Inductive Semi-Supervised Learning},
   booktitle = {International Joint Conference on Artificial Intelligence (IJCAI)},
   year      = {2019},
